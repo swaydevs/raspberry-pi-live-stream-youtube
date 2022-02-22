@@ -1,0 +1,6 @@
+[Unit]
+Description=Raspberry Pi Live Stream Youtube
+[Service]
+ExecStart=/opt/live.sh
+[Install]
+WantedBy=default.target
