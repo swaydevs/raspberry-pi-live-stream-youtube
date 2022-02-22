@@ -1,0 +1,1 @@
+ffmpeg -f lavfi -i anullsrc -rtsp_transport tcp -thread_queue_size 3000000 -i rtsp://xxx.xxx.xxx.xxx:554/live0 -tune zerolatency -preset veryfast -b:v 1024k -c:v copy -c:a aac -strict experimental -f flv rtmp://x.rtmp.youtube.com/live2/xxxx-xxxx-xxxx-xxxx-xxxx
